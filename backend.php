@@ -19,7 +19,6 @@
     if ($conn->connect_error) {
       die("Conexao falhou: " . $conn->connect_error);
     }
-
     
 ///// INSERT ( cadastro do usuario no banco)
     $sql = "INSERT INTO login (nome, cpf, senha) VALUES ('$name','$cpf','$password')";
