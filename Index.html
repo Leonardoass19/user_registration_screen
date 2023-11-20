@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de cadastro</title>
+    <link href="Style.css" rel="stylesheet"/>
+    <script src="script.js"></script>
+</head>
+<body> 
+    <form action="backend.php" method="post">        
+        <div class="tela-login">
+            <h1>Criar conta</h1>
+            <input type="text" name="nome" id= "nome" placeholder="Nome">
+            <input type="text" name="cpf" id="cpf"
+            autocomplete="off" maxlength="14"placeholder="CPF" oninput="mascara_cpf()">
+            <input type="password" name="senha" id="senha" placeholder="Senha">
+            <button type="submit">Cadastrar</button>
+        </div>
+    </form>
+</body>
+</html>
